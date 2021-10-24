@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 1;
+  line-height: 2;
+  padding: 2rem;
+  background-color: #eaeaf1;
+}
+
+input {
+  width: 50%;
+  display: block;
+  margin-bottom: 1rem;
+  font: inherit;
+  line-height: 3rem;
+  padding: 0 1rem;
+
+  border-radius: 8px;
+  border: none;
+}
+
+button {
+  font: inherit;
+  line-height: 2rem;
+  padding: 0 1rem;
+
+  border-radius: 8px;
+
+  cursor: pointer;
+
+  border: none;
+
+  color: white;
+
+  font-weight: 600;
+}
+
+button:hover {
+  filter: brightness(.95);
+}
+
+button:not(.active){
+  color: black;
+}
+
+button.sub.active {
+  background: rgb(91, 172, 91);
+}
+
+button.uns.active {
+  background: rgb(190, 57, 53);
+}
+
+p {
+  margin-top: 1rem;
+}
+p::before {
+  opacity: 0.5;
+  margin-right: 0.5rem;
+}
+p:nth-of-type(1)::before {
+  content: 'Observer 1: ';
+}
+p:nth-of-type(2)::before {
+  content: 'Observer 2: ';
+}
+p:nth-of-type(3)::before {
+  content: 'Observer 3: ';
+}
