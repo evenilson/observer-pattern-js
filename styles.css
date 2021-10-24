@@ -26,16 +26,14 @@ input {
 button {
   font: inherit;
   line-height: 2rem;
-  padding: 0 1rem;
 
+  padding: 0 1rem;
   border-radius: 8px;
 
   cursor: pointer;
-
   border: none;
 
   color: white;
-
   font-weight: 600;
 }
 
@@ -58,16 +56,20 @@ button.uns.active {
 p {
   margin-top: 1rem;
 }
+
 p::before {
   opacity: 0.5;
   margin-right: 0.5rem;
 }
+
 p:nth-of-type(1)::before {
   content: 'Observer 1: ';
 }
+
 p:nth-of-type(2)::before {
   content: 'Observer 2: ';
 }
+
 p:nth-of-type(3)::before {
   content: 'Observer 3: ';
 }
